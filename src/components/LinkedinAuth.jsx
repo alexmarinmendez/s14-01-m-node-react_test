@@ -7,7 +7,6 @@ const LinkedinAuth = () => {
         async function fetchData() {
             try {
                 const response = await fetch("https://s14-01-m-node-react.vercel.app/api/v1/signin-with-linkedin/authorize", {
-                    method: "GET", // *GET, POST, PUT, DELETE, etc.
                     mode: "no-cors", // no-cors, *cors, same-origin
                     headers: {
                         //   "Content-Type": "application/json",
