@@ -8,7 +8,7 @@ const LinkedinAuth = () => {
             try {
                 const response = await fetch("https://s14-01-m-node-react.vercel.app/api/v1/signin-with-linkedin/authorize", {
                     headers: {
-                        'Access-Control-Allow-Origin': '*'
+                        'Access-Control-Allow-Origin': 'https://s14-01-m-node-react-test.vercel.app/'
                     },
                 });
                 const user = await response.json();
