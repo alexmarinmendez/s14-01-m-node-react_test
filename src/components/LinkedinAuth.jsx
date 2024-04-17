@@ -6,13 +6,7 @@ const LinkedinAuth = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("https://s14-01-m-node-react.vercel.app/api/v1/signin-with-linkedin/authorize", {
-                    mode: "no-cors", // no-cors, *cors, same-origin
-                    headers: {
-                        //   "Content-Type": "application/json",
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                });
+                const response = await fetch("https://s14-01-m-node-react.vercel.app/api/v1/signin-with-linkedin/authorize");
                 const user = await response.json();
                 console.log(user);
             } catch (err) {
